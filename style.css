@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0 0;
+    margin: 0 0;
+}
+body{
+    background-color: white;
+
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid;
+    padding: 15px 20px;
+    box-shadow:1px 1px 4px;
+    
+}
+
+.navbar .logo a{
+    text-decoration: none;
+
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    
+}
+.navbar .nav-items{
+    list-style: none;
+    display: flex;
+    gap:20px;
+    
+}
+.navbar .nav-items a{
+    text-decoration: none;
+    color:#28282b;
+    padding:10px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s ease-in;
+}
+
+.navbar .nav-items a:hover{
+    border-bottom:3px solid blue;
+    color:rgb(64, 56, 56);
+}
+.btn-section{
+    display:flex;
+    gap:5px
+}
+.btn-section .login{
+    padding:7px 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #1927b6;
+    color:white;
+    border-radius: 5px;
+}
+
+.btn-section .register{
+    padding:7px 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color:#1927b6;
+    border-color: #1927b6;
+    border-radius: 5px;
+}
+
+/* here goes the contents part  */
+
+.container {
+    margin-top: 4px;
+    height: 700px;
+    background: url('new.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: overlay;
+    /* filter:brightness(0.5); */
+  
+}
+
+.image-slider{
+    gap:10px;
+
+    display: flex;
+    align-items: center;
+    padding:10px 10px;
+    flex-direction: column;
+    opacity: 0;
+    /* border: 1px solid yellow; */
+    transform: translateY(-50px);
+    animation: slideInAnimation 2s forwards;
+    
+}
+
+@keyframes slideInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+
+.home-header{
+    padding:0px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 80px;
+}
+
+.text{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.connect{
+    /* color:#1c1046; */
+    color: white;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.collab{
+    /* color:#091387; */
+    color: white;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.create{
+    /* color:#5486d1; */
+    color: white;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.btn-book button{
+    margin-top:20px;
+    padding:10px 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    background-color:transparent;
+    color:white;
+    border: 3px solid white;
+    
+}
+
+/* recent */
+
+.container-2{
+    background-color: white;
+    height:700px;
+    padding:10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container-2 .cont-header h1{
+    color:#28282b;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+   
+    margin:10px 0px 10px 0px;
+    
+    
+}
+
+.image-part{
+    margin-top: 20px;
+    height:480px;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    padding:10px 20px;
+   
+}
+
+.image-part .image-1{
+    background: url('nature1.jpg');
+    background-size: cover;
+    height:460px;
+    width:360px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+.image-part .image-2{
+    background: url('nature2.jpg');
+    height:460px;
+    width:360px;
+    background-size: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+.image-part .image-3{
+    background: url('nature3.jpg');
+    height:460px;
+    width:360px;
+    background-size: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+.image-part .image-4{
+    background: url('nature4.jpg');
+    height:460px;
+    width:360px;
+    background-size: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+}
+
+.cont2-btn button{
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #28282b;
+    color:white;
+}
+
+.cont2-btn button:hover{
+    background-color: white;
+    color: #28282b;
+}
+
+.container-3{
+    background-color: #28282b;
+    height:750px;
+    padding: 20px 30px;
+   
+}
+
+.cont-header-acomp h1{
+    color:#ff014f;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.skill-wall{
+    /* background-color: white; */
+    height:650px;
+    padding:20px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skill-wall .skill-1{
+    /* background-color: #28282b; */
+    height:300px;
+    width:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap:15px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+.skill-wall .skill-2{
+    /* background-color:red; */
+    height:300px;
+    width:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.skill-wall .skill-3{
+    /* background-color:yellow; */
+    height:300px;
+    width:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.skill-wall .skill-4{
+    /* background-color:blueviolet; */
+    height:300px;
+    width:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.skill-wall .skill-5{
+    /* background-color: grey; */
+    height:300px;
+    width:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+ 
+}
+
+.skill-wall .skill-6{
+    /* background-color: green; */
+    height:300px;
+    width:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.material-symbols-outlined{
+    color:#03e729;
+    font-size: 80px;
+    /* border: 1px solid yellow; */
+}
+
+.parg p{
+    color: white;
+    max-width:430px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* border: 1px solid white; */
+    text-align: justify;
+    
+}
+
+.skill-title{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+
+    font-style: normal;
+    /* border: 1px solid white; */
+    font-size: 25px;
+}
+
+
+footer{
+    background-color: black;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+}
+
+/* contact us from css code */
+
+.contact-container{
+    margin-top: 5px;
+    background-color: #28282b;
+    height:785px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.form-container{
+    height:700px;
+    width:1400px;
+    /* border: 1px solid white; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    /* border: 1px solid yellow; */
+    transform: translateY(-50px);
+    animation: slideInAnimation 2s forwards;
+
+
+}
+
+.form-image{
+    /* border: 1px solid red; */
+    background:url('camera.jpg');
+    width: 700px;
+    height:700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.form-section{
+    /* border: 1px solid green; */
+    background-color: white;
+    width: 700px;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:40px
+    
+    
+}
+
+form{
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    gap:10px;
+}
+
+input{
+    height: 50px;
+    width:500px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border:3px solid green;
+    border-radius: 5px;
+    padding:0px 20px;
+}
+
+#message{
+    height: 100px;
+    width:500px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border:3px solid green;
+    border-radius: 5px;
+    padding:0px 20px;
+
+}
+
+.submit-btn button{
+    height:50px;
+    width:150px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 5px;
+    color:white;
+    background-color: green;
+}
+
+.contact-title h1{
+    /* border:1px solid; */
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* css code for gallery page starts from here */
+.gallery-container{
+    margin-top: 5px;
+    height:900px;
+    background-color: #28282b;
+    padding:40px 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap:50px;
+    place-items: center;
+    
+
+}
+
+.image-box1, .image-box2, .image-box3, .image-box4, .image-box5, .image-box6{
+    height:400px;
+    width:400px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 10px;
+    gap:10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    /* justify-content: center; */
+    
+}
+
+.image-sec{
+    background: url('kumari.png');
+    height:400px;
+    width:380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.image-box2 .image-sec{
+    background: url('wedding.jpg');
+    height:400px;
+    width:380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.image-box3 .image-sec{
+    background: url('wildlife.jpg');
+    height:400px;
+    width:380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.image-box4 .image-sec{
+    background: url('nepal_tour.jpg');
+    height:400px;
+    width:380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.image-box5 .image-sec{
+    background: url('japantour.jpg');
+    height:400px;
+    width:380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.image-box6 .image-sec{
+    background: url('astrophotography.jpg');
+    height:400px;
+    width:380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.photo-title h2{
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.box1-btn button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    padding: 5px 30px;
+    background-color: #28282b;
+    color:white;
+    border:2px solid white
+
+}
+
+
+
+
+/* ertyuio */
+
+

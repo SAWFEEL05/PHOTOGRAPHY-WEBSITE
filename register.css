@@ -1,0 +1,146 @@
+.register-container{
+    height:700px;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding:10px;    
+     opacity: 0;
+     animation: fadeInAnimation 2s forwards;
+ }
+ 
+ @keyframes fadeInAnimation {
+     to {
+         opacity: 1;
+     }
+ 
+     
+ 
+    
+    
+ 
+   }
+ 
+   .secondary-container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding:20px 30px;
+     gap:1rem;
+     border-radius: 5px;
+     border:1px solid;
+     
+   }
+ 
+   .secondary-container .header{
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 60px;
+   
+   }
+ 
+   .sign{
+  
+     padding:10px 20px;
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 15px;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     gap:5px;
+     background-color: transparent;
+     
+    
+   }
+ 
+   .sign img{
+     height:25px;
+     padding:2px;
+   }
+ .design{
+     display: flex;
+     align-items: center;
+ 
+ 
+ }
+ 
+ .or{
+     font-family: "Poppins", sans-serif;
+     font-style: normal;
+ }
+   .line-1,.line-2{
+     border:1px solid lightslategrey;
+     height:0px;
+     width: 150px;
+     margin:0px 10px
+     
+   }
+ 
+ .form-container1 form{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap:0rem 2rem;
+     align-items: center;
+     justify-content: center;
+  
+ }
+ 
+ label{
+     font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+     font-style: normal;
+ }
+ 
+ .frm input{
+     height:30px;
+     width:300px;
+     font-size: 16px;
+     padding:3px 3px;
+     border:1px solid;
+     border-radius: 4px;
+     
+ 
+ }
+ .frm{
+     
+     padding:5px 5px;
+     margin:5px;
+     display: flex;
+     flex-direction: column;
+ } 
+ 
+ .signUpBtn{
+  
+     padding:8px 0px;
+     width:150px;
+     font-family: "Poppins", sans-serif;
+     background-color:green;
+     font-weight: 500;
+      font-style: normal;
+      color:#fff;
+      border-radius: 5px;
+ }
+ .pWithLink{
+     font-family: "Poppins", sans-serif;
+     font-size: 16px;
+      font-style: normal;
+ }
+ 
+ .pWithLink a{
+     text-decoration: none;
+     
+ }
+
+ .form-container2 form{
+  display: flex;
+  align-items: center;
+}
+
+.login-header{
+  text-align: center;
+}

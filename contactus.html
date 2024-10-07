@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.capturedmoments.com</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+
+    Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><span>Captured Moments</span></a>
+        </div>
+        <div class="list-section">
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" id="gallery">Gallery</a></li>
+                <li><a href="Skills Section.html" id="skills">Skills & Achievements</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="btn-section" id="auth-buttons">  <!-- Add id here for login and register
+             buttons -->
+            <button class="login" onclick="onLogin()">Login</button>
+            <button class="register" onclick="onRegister()">Register</button>
+        </div>
+    </nav>
+    <!-- contact us code start here -->
+     <div class="contact-container">
+        <div class="form-container">
+            <div class="form-image">
+
+            </div>
+            <div class="form-section">
+                <div class="contact-title">
+                    <h1>Contact us</h1>
+                </div>
+                <form action="submit_contact.php" method="POST">
+                    <div class="frm">
+                        <label for="name">Name</label><br>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div class="frm">
+                        <label for="email">Email</label><br>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div class="frm">
+                        <label for="number">Phone number</label><br>
+                        <input id="number" name="phone" type="text" required>
+                    </div>
+                    <div class="frm">
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+     </div>
+     <footer>
+        <span> Copyright 2024 Captured Moments. Designed by Safil</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

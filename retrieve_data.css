@@ -1,0 +1,30 @@
+body{
+    background-color: #28282b;
+}
+
+.title2{
+
+
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.table-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table{
+
+    border:0px solid;
+}
+
+th,td,tr{
+    font-size: 20px;
+    padding:10px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
